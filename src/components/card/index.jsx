@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Selector from './selector';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/cartSlice';
 
 const Card = ({item}) => {
+  const dispatch=useDispatch()
+  const [selectedType,setSelectedType]=useState(null);
+
+  const handleType=(type)=>{
+    setSelectedType(type===selectedType ? null :type)
+  }
+
+ const handleBaseket=()=>{
+  dispatch(addToCart(item));
+
+  setSelectedType(null)
+ }
+
     return (
         <div className="bg-black/20 border border-white/50 rounded-[24px] pl-[10px] pr-[20px] py-[30px] flex gap-[15px] lg:gap-[30px]">
           <div className="flex items-center">
@@ -10,14 +26,14 @@ const Card = ({item}) => {
           <div className="flex-1">
             <h1 className="text-[24px] font-medium">{item.name}</h1>
     
-            
+            <Selector selectedType={selectedType} handleType={handleType}/>
     
             <div className="mt-5 flex justify-between">
               <p>₺{item.price} / top</p>
     
               <button
-              
-                className={`border py-1 px-3 rounded-md hover:bg-white/30 transition `}
+              onClick={handleBaseket}
+              className={`border py-1 px-3 rounded-md hover:bg-white/30 transition ${!selectedType && "invisible"}`}
               >
                 Sepete Ekle
               </button>

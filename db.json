@@ -2,12 +2,12 @@
     "ice-creams": [
       {
         "name": "Bal Badem",
-        "image": "/ice-1.png",
+        "image": "/ice-1 (1).png",
         "price": 25.0
       },
       {
         "name": "Çikolata Fırtınası",
-        "image": "/ice-2.png",
+        "image": "/ice-2 (1).png",
         "price": 20.0
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "name": "Karamel Dalgalanması",
-        "image": "/ice-1.png",
+        "image": "/ice-1 (1).png",
         "price": 32.0
       },
       {
