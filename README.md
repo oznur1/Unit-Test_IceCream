@@ -21,5 +21,6 @@
 🔲 React-Icons: To add stylish and functional icons to the project.
 🔧 @reduxjs/toolkit: A simplified structure for Redux operations.
 
-[EkranKayd2025-05-11133407-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/cfc0fc09-15e1-4892-9d5f-1c5fb1b54cc1)
+
+![EkranKayd2025-05-11133407-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/16dc692f-3c81-4154-a896-2e73a2278a1b)
 
